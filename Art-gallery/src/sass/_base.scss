@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+
+// COLOR VARIABLES
+$clr-white: #ffffff;
+$clr-grey: #444444;
+$clr-dark: #151515;
+$clr-gold: #d5966c;
+
+// FONT VARIABLES
+$font-primary: "Big Shoulders Display", cursive;
+$font-secondary: "Outfit", sans-serif;
+
+// FONT SIZES
+$fs-xl: 60px;
+$fs-l: 70px;
+$fs-m: 60px;
+$fs-s: 36px;
+
+// LINE SPACING
+$ls-xl: 55px;
+$ls-l: 70px;
+$ls-m: 60px;
+$ls-s: 36px;
+
+// RESPONSIVE BREAKPOINTS
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: $font-secondary;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  background-color: $clr-white;
+  color: $clr-grey;
+  width: 100%;
+}
+
+h1 {
+  font-family: $font-primary;
+  font-size: $fs-xl;
+  line-height: $ls-xl;
+  font-weight: 900;
+  color: $clr-dark;
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 7.2rem;
+  gap: 3.2rem;
+  width: 26rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.4rem;
+  font-family: $font-primary;
+  font-weight: 800;
+  background-color: $clr-dark;
+  color: $clr-white;
+  .icon__background {
+    display: flex;
+    flex-basis: 56px;
+    align-self: stretch;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $clr-gold;
+    // width: 56px;
+    .icon {
+      height: 2.4rem;
+      width: 0.8rem;
+    }
+  }
+}
+
+.back-button {
+  justify-content: flex-start;
+}

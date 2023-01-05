@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@300&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.8rem;
+  font-weight: 300;
+  line-height: 2.8rem;
+  background-color: #ffffff;
+  color: #444444;
+  width: 100%;
+}
+
+h1 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 60px;
+  line-height: 55px;
+  font-weight: 900;
+  color: #151515;
+}
+
+a {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  height: 7.2rem;
+  gap: 3.2rem;
+  width: 26rem;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.4rem;
+  font-family: "Big Shoulders Display", cursive;
+  font-weight: 800;
+  background-color: #151515;
+  color: #ffffff;
+}
+a .icon__background {
+  display: flex;
+  flex-basis: 56px;
+  align-self: stretch;
+  justify-content: center;
+  align-items: center;
+  background-color: #d5966c;
+}
+a .icon__background .icon {
+  height: 2.4rem;
+  width: 0.8rem;
+}
+
+.back-button {
+  justify-content: flex-start;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+.header img {
+  object-fit: contain;
+}
+.header .heading {
+  padding: 0 1.6rem;
+  display: flex;
+}
+@media only screen and (min-width: 760px) {
+  .header .heading {
+    padding: 0;
+    margin-left: -4rem;
+  }
+}
+.header .heading__title {
+  text-transform: uppercase;
+  margin: 3.2rem 0;
+}
+.header .heading__info {
+  max-width: 35rem;
+}
+@media only screen and (min-width: 760px) {
+  .header {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

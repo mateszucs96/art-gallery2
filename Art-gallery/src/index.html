@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Frontend Mentor | Art gallery website</title>
+  </head>
+  <body>
+    <header class="header">
+      <picture>
+        <source
+          media="(min-width:990px)"
+          srcset="
+            ./assets/desktop/image-hero.jpg,
+            ./assets/desktop/image-hero@2x.jpg
+          "
+        />
+        <source
+          media="(min-width:760px)"
+          srcset="
+            ./assets/tablet/image-hero.jpg,
+            ./assets/tablet/image-hero@2x.jpg
+          "
+        />
+        <source
+          srcset="
+            ./assets/mobile/image-hero.jpg,
+            ./assets/mobile/image-hero@2x.jpg
+          "
+        />
+        <img src="./assets/mobile/image-hero.jpg" alt="Flowers" />
+      </picture>
+      <!-- <img src="./assets/mobile/image-hero.jpg" /> -->
+
+      <div class="heading">
+        <div class="heading__info">
+          <div class="heading__title">
+            <h1>Modern</h1>
+            <h1>art gallery</h1>
+          </div>
+          <p class="description">
+            The arts in the collection of the Modern Art Gallery all started
+            from a spark of inspiration. Will these pieces inspire you? Visit us
+            and find out.
+          </p>
+          <a class="navigate-button" href="./location.html">
+            <div>our Location</div>
+            <div class="icon__background">
+              <svg class="icon">
+                <use xlink:href="./assets/sprite.svg#icon-arrow-right"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>
