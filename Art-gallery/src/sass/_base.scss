@@ -12,13 +12,13 @@ $font-secondary: "Outfit", sans-serif;
 
 // FONT SIZES
 $fs-xl: 60px;
-$fs-l: 70px;
+$fs-l: 50px;
 $fs-m: 60px;
 $fs-s: 36px;
 
 // LINE SPACING
 $ls-xl: 55px;
-$ls-l: 70px;
+$ls-l: 45px;
 $ls-m: 60px;
 $ls-s: 36px;
 
@@ -53,6 +53,15 @@ h1 {
   line-height: $ls-xl;
   font-weight: 900;
   color: $clr-dark;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: $font-primary;
+  font-size: $fs-l;
+  line-height: $ls-l;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 a {
@@ -85,6 +94,12 @@ a {
       width: 0.8rem;
     }
   }
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
 .back-button {

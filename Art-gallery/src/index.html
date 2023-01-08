@@ -24,7 +24,7 @@
           "
         />
         <source
-          media="(min-width:760px)"
+          media="(min-width:660px)"
           srcset="
             ./assets/tablet/image-hero.jpg,
             ./assets/tablet/image-hero@2x.jpg
@@ -32,8 +32,8 @@
         />
         <source
           srcset="
-            ./assets/mobile/image-hero.jpg,
-            ./assets/mobile/image-hero@2x.jpg
+            ./assets/mobile/image-hero.jpg    300w,
+            ./assets/mobile/image-hero@2x.jpg 375w
           "
         />
         <img src="./assets/mobile/image-hero.jpg" alt="Flowers" />
@@ -62,5 +62,109 @@
         </div>
       </div>
     </header>
+
+    <main class="main">
+      <div class="main__heading">
+        <picture>
+          <source
+            media="(min-width:990px)"
+            srcset="
+              ./assets/desktop/image-grid-1.jpg,
+              ./assets/desktop/image-grid-1@2x.jpg
+            "
+          />
+          <source
+            media="(min-width:660px)"
+            srcset="
+              ./assets/tablet/image-grid-1.jpg,
+              ./assets/tablet/image-grid-1@2x.jpg
+            "
+          />
+          <source
+            srcset="
+              ./assets/mobile/image-grid-1.jpg,
+              ./assets/mobile/image-grid-1@2x.jpg
+            "
+          />
+          <img src="./assets/mobile/image-grid-1.jpg" alt="Flowers" />
+        </picture>
+
+        <div class="heading">
+          <div class="heading__info">
+            <div class="heading__title">
+              <h2>Your day</h2>
+              <h2>At the Gallery</h2>
+            </div>
+            <p class="description">
+              Wander through our distinct collections and find new insights
+              about our artists. Dive into the details of their creative
+              process.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <section class="gallery">
+        <div class="gallery__picture--1">
+          <picture>
+            <source
+              media="(min-width:990px)"
+              srcset="
+                ./assets/desktop/image-grid-2.jpg,
+                ./assets/desktop/image-grid-2@2x.jpg
+              "
+            />
+            <source
+              media="(min-width:660px)"
+              srcset="
+                ./assets/tablet/image-grid-2.jpg,
+                ./assets/tablet/image-grid-2@2x.jpg
+              "
+            />
+            <source
+              srcset="
+                ./assets/mobile/image-grid-2.jpg,
+                ./assets/mobile/image-grid-2@2x.jpg
+              "
+            />
+            <img src="./assets/mobile/image-grid-2.jpg" alt="Flowers" />
+          </picture>
+        </div>
+
+        <picture class="gallery__picture--2">
+          <source
+            media="(min-width:990px)"
+            srcset="
+              ./assets/desktop/image-grid-3.jpg,
+              ./assets/desktop/image-grid-3@2x.jpg
+            "
+          />
+          <source
+            media="(min-width:660px)"
+            srcset="
+              ./assets/tablet/image-grid-3.jpg,
+              ./assets/tablet/image-grid-3@2x.jpg
+            "
+          />
+          <source
+            srcset="
+              ./assets/mobile/image-grid-3.jpg,
+              ./assets/mobile/image-grid-3@2x.jpg
+            "
+          />
+          <img src="./assets/mobile/image-grid-3.jpg" alt="Flowers" />
+        </picture>
+
+        <div class="welcome-message">
+          <div class="welcome-message__content">
+            <h2>Come & be inspired</h2>
+            <p>
+              We're excited to welcome you to our gallery and see how our
+              collections influence you.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>

@@ -1,0 +1,68 @@
+.main {
+  padding: 0 1.6rem;
+  margin: 0 auto;
+  @media only screen and (min-width: 660px) {
+    padding: 0 4rem;
+  }
+  @media only screen and (min-width: 990px) {
+    padding: 0 16.5rem;
+  }
+}
+
+.main__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  img {
+    object-fit: cover;
+  }
+  .heading {
+    padding: 0 1.6rem;
+    display: flex;
+    @media only screen and (min-width: 660px) {
+      padding: 0;
+    }
+
+    &__title {
+      color: $clr-dark;
+    }
+
+    &__info {
+      max-width: 35rem;
+    }
+  }
+  @media only screen and (min-width: 660px) {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6.8rem;
+  }
+  @media only screen and (min-width: 990px) {
+    gap: 12.5rem;
+  }
+}
+
+.gallery {
+  display: grid;
+  gap: 1.6rem;
+
+  &__picture--1 {
+    @media only screen and (min-width: 660px) {
+      grid-row: 1 / span 2;
+    }
+  }
+  @media only screen and (min-width: 660px) {
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+
+  .welcome-message {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $clr-dark;
+    color: $clr-white;
+    &__content {
+      max-width: 35rem;
+    }
+  }
+}

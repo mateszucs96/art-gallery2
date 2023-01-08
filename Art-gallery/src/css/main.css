@@ -28,6 +28,15 @@ h1 {
   line-height: 55px;
   font-weight: 900;
   color: #151515;
+  text-transform: uppercase;
+}
+
+h2 {
+  font-family: "Big Shoulders Display", cursive;
+  font-size: 50px;
+  line-height: 45px;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 a {
@@ -60,6 +69,12 @@ a .icon__background .icon {
   width: 0.8rem;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
 .back-button {
   justify-content: flex-start;
 }
@@ -69,30 +84,106 @@ a .icon__background .icon {
   flex-direction: column;
 }
 .header img {
-  object-fit: contain;
+  object-fit: cover;
 }
 .header .heading {
   padding: 0 1.6rem;
   display: flex;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 660px) {
   .header .heading {
     padding: 0;
     margin-left: -4rem;
   }
 }
 .header .heading__title {
-  text-transform: uppercase;
   margin: 3.2rem 0;
 }
 .header .heading__info {
   max-width: 35rem;
 }
-@media only screen and (min-width: 760px) {
+@media only screen and (min-width: 660px) {
   .header {
     flex-direction: row;
     align-items: center;
   }
+}
+
+.main {
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+@media only screen and (min-width: 660px) {
+  .main {
+    padding: 0 4rem;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .main {
+    padding: 0 16.5rem;
+  }
+}
+
+.main__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+.main__heading img {
+  object-fit: cover;
+}
+.main__heading .heading {
+  padding: 0 1.6rem;
+  display: flex;
+}
+@media only screen and (min-width: 660px) {
+  .main__heading .heading {
+    padding: 0;
+  }
+}
+.main__heading .heading__title {
+  color: #151515;
+}
+.main__heading .heading__info {
+  max-width: 35rem;
+}
+@media only screen and (min-width: 660px) {
+  .main__heading {
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 6.8rem;
+  }
+}
+@media only screen and (min-width: 990px) {
+  .main__heading {
+    gap: 12.5rem;
+  }
+}
+
+.gallery {
+  display: grid;
+  gap: 1.6rem;
+}
+@media only screen and (min-width: 660px) {
+  .gallery__picture--1 {
+    grid-row: 1/span 2;
+  }
+}
+@media only screen and (min-width: 660px) {
+  .gallery {
+    grid-template-columns: 1fr 0.5fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
+.gallery .welcome-message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151515;
+  color: #ffffff;
+}
+.gallery .welcome-message__content {
+  max-width: 35rem;
 }
 
 /*# sourceMappingURL=main.css.map */
